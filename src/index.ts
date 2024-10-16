@@ -16,7 +16,7 @@ export const processAndOutputRovers = (input: string[]): RoverPosition[] => {
 // Test data input
 const input = ["5 5", "1 2 N", "LMLMLMLMM", "3 3 E", "MMRMMRMRRM"];
 
-// Process input and output results and receive an array of Rover positions
+// Process input and output results and receive an array of rover positions
 const result = processAndOutputRovers(input);
 
 console.log("result:", result);
