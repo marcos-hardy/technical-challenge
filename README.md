@@ -40,17 +40,19 @@ Ensure you have the following installed:
     ```
    
 2. Install the necessary dependencies:
-   `npm install`
+   ```
+   npm install
+   ```
 
 ## Running the Application
 
 To run the Mars Rover simulation, use the following command:
-   `ts-node src/index.ts`
-
-
+```
+npm run start
+```
 This command will run the default input and display the final positions of the rovers.
 
-You can modify the input directly within the src/index.ts file, or adapt the code to take input dynamically.
+You can modify the input directly within the src/index.ts file.
 
 ## Running tests
 
@@ -58,30 +60,30 @@ The project uses Jest for unit testing. To run the tests:
 
 1. Ensure that the dependencies are installed (`npm install`).
 2.	Run the tests using the following command:
-    `npm run test`
+```
+npm run test
+```
 This will execute all the test cases. Both integration and unit tests.
 
 
 ### Sample Input
 To understand how the application works, here’s an example of input:
-
-    ```
-    5 5
-    1 2 N
-    LMLMLMLMM
-    3 3 E
-    MMRMMRMRRM
-	•	The first line represents the size of the plateau.
-	•	The second line is the initial position of the first rover.
-	•	The third line is the instructions for the first rover.
-	•	The fourth and fifth lines are the position and instructions for the second rover.
-    ```
+```
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
+```
+- The first line represents the size of the plateau.
+- The second line is the initial position of the first rover.
+- The third line is the instructions for the first rover.
+- The fourth and fifth lines are the position and instructions for the second rover.
 
 ## Expected Output
 For the above input, the expected output would be:
-    ```
-    1 3 N
-    5 1 E
-    ```
-
+```
+1 3 N
+5 1 E
+```
 This indicates that the first rover ends up at position (1, 3) facing North, and the second rover ends up at position (5, 1) facing East.
