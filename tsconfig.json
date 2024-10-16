@@ -17,11 +17,17 @@
         "resolveJsonModule": true,
         "declaration": true,
         "declarationMap": true,
-        "removeComments": true
+        "removeComments": true,
+        "baseUrl": "./",
+        "paths": {
+            "@*": [
+                "src/*"
+            ]
+        }
     },
     "include": [
         "*.ts",
-        "src/RoverSquad.ts"
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules",
