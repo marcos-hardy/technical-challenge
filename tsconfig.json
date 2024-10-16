@@ -20,7 +20,8 @@
         "removeComments": true
     },
     "include": [
-        "*.ts"
+        "*.ts",
+        "src/RoverSquad.ts"
     ],
     "exclude": [
         "node_modules",
