@@ -1,5 +1,5 @@
-import RoverSquad from "@RoverSquad";
-import { RoverData } from "@types";
+import RoverSquad from "./RoverSquad";
+import { RoverData } from "./types";
 
 export const processInput = (input: string[]) => {
   // The first line of input is the upper-right coordinates of the plateau
@@ -24,4 +24,10 @@ export const processInput = (input: string[]) => {
 
     roversData.push({ position, instructions });
   }
+
+  return roverSquad.deployRovers(roversData).map((roverPosition) => roverPosition);
 };
+
+const result = processInput(["5 5", "1 2 N", "LMLMLMLMM", "3 3 E", "MMRMMRMRRM"]);
+
+console.log("result:", result);
