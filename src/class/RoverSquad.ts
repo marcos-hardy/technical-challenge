@@ -1,6 +1,6 @@
-import { CardinalDirection, Instruction, PlateauSize, RoverData, RoverPosition } from "./types";
+import { CardinalDirection, Instruction, PlateauSize, RoverData, RoverPosition } from "../types";
 
-class RoverSquad {
+export class RoverSquad {
   plateauX: number;
   plateauY: number;
 
@@ -96,5 +96,3 @@ class RoverSquad {
     return newX >= 0 && newY >= 0 && newX <= this.plateauX && newY <= this.plateauY;
   }
 }
-
-export default RoverSquad;
